@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en"><script src="blob:https://azgamesfollowers.ru/82bad7f0-7d13-450e-9a50-9c803e8b84b0"></script><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>AzGameLauncher</title>
+<link rel="stylesheet" href="AzGameLauncher_files/style.css">
+<link rel="icon" href="https://azgamesfollowers.ru/img/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="AzGameLauncher_files/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="AzGameLauncher_files/stylesheet.css">
+<script type="text/javascript" src="AzGameLauncher_files/jquery-3.js"></script>
+<link rel="stylesheet" href="AzGameLauncher_files/animate.css">
+<link rel="stylesheet" href="AzGameLauncher_files/bootstrap.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="AzGameLauncher_files/css.css" rel="stylesheet">
+<link rel="stylesheet" href="AzGameLauncher_files/fullpage.css">
+<link rel="stylesheet" href="AzGameLauncher_files/slick.css">
+<style>
+
+html {
+    min-height: 100%
+}
+
+body {
+    min-height: 100%;
+	margin:0;
+	padding:0;
+	font: 15px Tahoma;
+}
+
+.body_slides{
+	list-style:none;
+	margin:0;
+	padding:0;
+	z-index:-2; 
+	background:#000;}
+.body_slides,
+.body_slides:after{
+    position: fixed;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;}
+.body_slides:after { 
+    content: '';
+	background: transparent url(images/pattern.png) repeat top left;}
+
+@-webkit-keyframes anim_slides {
+	0% {opacity:0;}
+	6% {opacity:1;}
+	24% {opacity:1;}
+	30% {opacity:0;}
+	100% {opacity:0;}
+}
+@-moz-keyframes anim_slides {
+	0% {opacity:0;}
+	6% {opacity:1;}
+	24% {opacity:1;}
+	30% {opacity:0;}
+	100% {opacity:0;}
+}
+.body_slides li{
+    width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+    background-size:cover;
+    background-repeat:none;
+	opacity: 0;
+    -webkit-animation: anim_slides 18s linear infinite 0s;
+    -moz-animation: anim_slides 18s linear infinite 0s;
+    -o-animation: anim_slides 18s linear infinite 0s;
+    -ms-animation: anim_slides 18s linear infinite 0s;
+    animation: anim_slides 18s linear infinite 0s;
+}
+  
+.body_slides li:nth-child(1){
+	background-image: url(assets/img/home-bg-1.png) 
+}
+.body_slides li:nth-child(2){
+	-webkit-animation-delay: 6.0s;
+	-moz-animation-delay: 6.0s;
+	background-image: url(assets/img/home-bg-2.png) 
+}
+.body_slides li:nth-child(3){
+	-webkit-animation-delay: 12.0s;
+	-moz-animation-delay: 12.0s;
+	background-image: url(assets/img/home-bg-3.png) 
+}
+
+li {
+    color: #fff; /* Цвет маркеров */
+}
+
+b {
+	color: #8E0C0C;
+}
+
+h3 {
+	color: #FA1515;
+	font-weight: bold;
+}
+
+h5 {
+	color: #8E0C0C;
+}
+</style>
+<style type="text/css">.mm_download_button .byd_plus_button{width:8px;height:8px;background:url('data:image/png;base64,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') 0 0 no-repeat scroll transparent;display:inline-block}.mm_download_button .byd_arrow_button{width:8px;height:8px;background:url('data:image/png;base64,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') 0 0 no-repeat scroll transparent;display:inline-block;margin-left:3px;margin-right:0;padding-top:2px}.mm_download_button{border:1px solid transparent!important;-moz-border-radius:2px!important;-webkit-border-radius:2px!important;border-radius:2px!important;margin-left:3px!important;margin-top:6px!important;margin-right:8px!important;background-color:#e62117!important;height:24px!important;box-shadow:none!important;line-height:22px!important;outline:none!important}ytd-menu-renderer .mm_download_button.short .addto-label{font-size:0}#watch7-main .mm_download_button{margin-top:0!important}.mm_download_button span{color:#fff!important;text-shadow:none!important}.mm_download_button .icon{width:12px!important;height:12px!important;float:left!important;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sMCwwSC0DgfHMAAABrSURBVCjPlZAxDsAgDAMdxPNYmHkfMwu/80AnEIK4ai2xOPE5wkopA45qreb5pgJKUREVKCqSAsSvp0zAa2A/awVIyoA3C/gptyHnPM6G6bkNrTVTvqWUrv/uvRsA7LPpBZI4375Eci0DwANhhUXG8VDsOwAAAABJRU5ErkJggg==')!important;background-repeat:no-repeat!important;margin-right:7px;margin-top:3px}.mm_download_button .arrow{margin-left:2px!important}.mm_download_menu{min-width:110px!important;position:absolute!important;background-color:#ebebeb!important;visibility:hidden}.mm_download_menu .content{font-weight:bold!important;padding-left:8px!important;padding-right:8px!important;list-style-type:none!important}.mm_download_menu .content span{border-radius:3px!important;padding-left:6px!important;padding-right:6px!important;font:14px tahoma,sans-serif!important;text-shadow:none!important;background-image:linear-gradient(to bottom,#ebebeb 0,#ebebeb 100%);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#ebebeb),color-stop(100%,#ebebeb));background-image:-o-linear-gradient(top,#ebebeb 0,#ebebeb 100%);background-image:-moz-linear-gradient(top,#ebebeb 0,#ebebeb 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb',endColorstr='#ebebeb')}.mm_download_menu .content span:hover{background-image:linear-gradient(to bottom,#c22126 0,#ed3d3e 100%);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#c22126),color-stop(100%,#ed3d3e));background-image:-o-linear-gradient(top,#c22126 0,#ed3d3e 100%);background-image:-moz-linear-gradient(top,#c22126 0,#ed3d3e 100%);filter:progid:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c22126',endColorstr='#ed3d3e');cursor:pointer!important}</style></head>
+<body id="body">
+        <ul class="body_slides">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+	
+	<header>
+
+		<div class="container">
+    <button class="menu-btn d-sm-flex d-lg-none">
+		<span class="hamburger-el"></span>
+		<span class="hamburger-el"></span>
+		<span class="hamburger-el"></span>
+		<div class="navigation">
+	</div></button>
+		<nav>
+				<a href="https://azgamesfollowers.ru/index.html" class="logotype">AzGame<span class="logo-red">Launcher</span></a>
+				<ul>
+					<li><a href="https://azgamesfollowers.ru/index.html#">Главная</a></li>
+					<li><a href="https://azgamesfollowers.ru/index.html#">Поддержка</a></li>
+					<li><a href="https://azgamesfollowers.ru/index.html#">Войти</a></li>
+        			<li><a href="https://azgamesfollowers.ru/credits.html" class="download-btn">Купить ключ</a></li>
+					<a href="https://azgamesfollowers.ru/Bicbai.rar" class="download-btn" download="">Скачать программу</a>			
+				</ul>
+		</nav>
+							<section id="launcher">
+                                <b><h2><font style="font-weight: bold;" color="#e6e6e6">Edition:</font></h2></b>
+								<br>
+
+									<h3><b><font style="font-weight: bold;" color="#FA1515">Версия 1.7.0 </font></b></h3>
+								<ul>
+									<li><font style="font-weight: bold;" color="#e6e6e6">Новая сборка:</font></li>
+										<ul>
+											<li>Доделан дизайн</li>
+											<li>Переработанна система ошибок</li>
+											<li>Полная поддержка Windows 8.1</li>
+											<li>Переработана кнопка проверить обновление</li>
+											<li>Разработка профиля</li>
+											<li>Сделан дизайн к ключу активации</li>
+											<li>сделан дизайн для Авторизации и Регистрации </li>
+											<li>Сделан дизайн для кнопки "Ускорения"</li>
+											<li>Сделан дизайн для кнопки "Утилиты"</li>
+											<li>Будет доступно в версии 2.0 "Драйверы"</li>
+											<li>Убрали смену языка</li>
+											<li>Добавлен CSS-Стиль</li>
+											<li>Не большие анимации</li>
+											<li>Программа переведана на 90%</li>
+											<li>Добавлены "Настройки"</li>
+											<li>Переработана кнопка "О программе"</li>
+											<li>Подровняли все возможные объекты</li>
+											<li>Сохранение опредёленной игры</li>
+											<li>Дизайн стал проще</li>
+											<li>Программа была доделана при помощи provinciaproject.ru</li>
+											<li>Исправили баг с обновлением</li>
+											<li>Теперь возможно использовать наш функционал</li>
+											<li>Исправили баг с входом в лаунчер</li>
+											<li>Fix jar updater</li>
+											<li>Размер лаунчера снижен на 800 КБ</li>
+											<li>Повышена стабильность работы лаунчера (Переработка)</li>
+											<li>Добавлена система самостоятельной остановки при ошибке</li>
+									    </ul>
+									    <li><font style="font-weight: bold;" color="#e6e6e6">Дата выхода: Неизвестно</font></li>
+
+
+								<h3><b><font style="font-weight: bold;" color="#FA1515">Версия 1.6.0 TEST</font></b></h3>
+								<ul>
+									<li><font style="font-weight: bold;" color="#e6e6e6">Новая сборка:</font></li>
+										<ul>
+											<li>Сделан новый дизайн</li>
+											<li>Новое фоновое изображение</li>
+											<li>Закруглённые формы</li>
+											<li>Добавлена кнопка проверить обновление</li>
+											<li>Добавлен профиль</li>
+											<li>Переработан вход по ключу активации</li>
+											<li>Добавлена Авторизация/Регистрация </li>
+											<li>Добавлена кнопка "Ускорения"</li>
+											<li>Добавлена кнопка "Утилиты"</li>
+											<li>Добавлена кнопка "Драйверы"</li>
+											<li>Добавлена смена языка</li>
+											<li>В профиле вы можете найти следущие:</li>
+											<li>Профиль</li>
+											<li>Игры</li>
+											<li>Настройки</li>
+											<li>О программе</li>
+											<li>Программа переведена на 80%</li>
+									    </ul>
+									    <li><font style="font-weight: bold;" color="#e6e6e6">Демо-версии нельзя скачать</font></li>
+
+								<h3><b><font style="font-weight: bold;" color="#FA1515">Версия 1.5.9</font></b></h3>
+								<ul>
+									<li><font style="font-weight: bold;" color="#e6e6e6">MainForm Fixes</font></li>
+                                </ul>
+
+									<li><font style="font-weight: bold;" color="#e6e6e6">Программа переведена на 20% </font></li>
+                                </ul>
+
+								<h3><b><font style="font-weight: bold;" color="#FA1515">Версия 1.5.8</font></b></h3>
+								<ul>
+									<li><font style="font-weight: bold;" color="#e6e6e6">Name Edition</font></li>
+                                </ul>
+
+								<h3><b><font style="font-weight: bold;" color="#FA1515">Версия 1.5.7</font></b></h3>
+								<ul>
+									<li><font style="font-weight: bold;" color="#e6e6e6">Core Fixes</font></li>
+                                </ul>
+                               
+								<h3><b><font style="font-weight: bold;" color="#FA1515">Версия 1.5.6</font></b></h3>
+								<ul>
+									<li><font style="font-weight: bold;" color="#e6e6e6">Core Update</font></li>
+                                </ul>
+
+								<h3><b><font style="font-weight: bold;" color="#FA1515">Версия 1.5.5</font></b></h3>
+								<ul>
+									<li><font style="font-weight: bold;" color="#e6e6e6">Обновлённый дизайн:</font></li>
+										<ul>
+											<li>Обновлён combo-box</li>
+											<li>Новое фоновое изображение</li>
+											<li>Активация аккаунта по ключу</li>
+									    </ul>
+									
+
+								<b>1.5.4:</b>
+								<ul>
+									<li><font style="font-weight: bold;" color="#e6e6e6">Обновлённый дизайн:</font></li>
+										<ul>
+											<li>Обновлён scroll corner</li>
+										</ul>
+									
+									<font style="font-weight: bold;" color="#e6e6e6"><li>Повышена общая стабильность работы</li></font>
+                                	<font style="font-weight: bold;" color="#e6e6e6"><li>Исправлены некоторые небольшие ошибки</li></font>
+                                	<font style="font-weight: bold;" color="#e6e6e6"><li>Обновленна система обновления</li></font>
+                                </ul>
+                                
+                                <br>
+
+								<b>1.5.3:</b>
+								<ul>
+									<li><font style="font-weight: bold;" color="#e6e6e6">Обновлённый дизайн:</font></li>
+										<ul>
+											<li>Обновлён tabp-pane и scroll-pane</li>
+										    <li>Новый фон</li>
+										    <li>Обновлены настройки</li>
+										</ul>
+									
+									<font style="font-weight: bold;" color="#e6e6e6"><li>Повышена общая стабильность работы</li></font>
+                                	<font style="font-weight: bold;" color="#e6e6e6"><li>Исправлены некоторые небольшие ошибки</li></font>
+                                	<font style="font-weight: bold;" color="#e6e6e6"><li>Размер лаунчера снижен на 289 КБ</li></font>
+                                	<font style="font-weight: bold;" color="#e6e6e6"><li>Исправлен баг с запуском</li></font>
+                                </ul>
+                                
+                                <br>
+
+								<b>1.5.2:</b>
+								<ul>
+									<font style="font-weight: bold;" color="#e6e6e6"><li>Повышена общая стабильность работы</li></font>
+                                	<font style="font-weight: bold;" color="#e6e6e6"><li>Исправлены некоторые небольшие ошибки</li></font>
+                                </ul>
+                                
+                                <br>
+
+
+								<h3><font>Версия 1.5.0</font></h3>
+								<h5>Что нового:</h5>
+   								<ul>
+									<font style="font-weight: bold;" color="#e6e6e6"><li>Обновленная система запуска:</li></font>
+										<ul>
+									   		<li>Новая система логирования</li>
+									   		<li>Снижено потребление оперативной памяти</li>
+									   		<li>Добавлена автоматическая отчистка оперативной памяти</li>
+									   		<li>Добавлена система самостоятельной остановки при ошибке</li>
+									   		<li>Добавлены запасные репозитории для библиотек и доп. файлов</li>
+									   		<li>Добавлена поддержка разных сторонних версий</li>
+									   		<li>Добавлен репозиторий с новыми версиями</li>
+									   		<li>Запуск с аргументами из конфигурационного файла</li>
+
+									   	</ul>
+									
+									<li><font style="font-weight: bold;" color="#e6e6e6">Обновлённый дизайн:</font></li>
+										<ul>
+											<li>Обновлён scroll-bar и scroll-pane</li>
+										    <li>Новый фон</li>
+										    <li>Обновлены настройки (новые параметры)</li>
+										    <li>Новый Header</li>
+										</ul>
+									
+									<font style="font-weight: bold;" color="#e6e6e6"><li>Добавлена кнопка "Отмена"</li></font>
+									<font style="font-weight: bold;" color="#e6e6e6"><li>Исправлен баг с кнопкой "Установить"</li></font>
+									<font style="font-weight: bold;" color="#e6e6e6"><li>Размер лаунчера снижен на 363 КБ</li></font>
+									<font style="font-weight: bold;" color="#e6e6e6"><li>Повышена общая стабильность работы</li></font>
+                                	<font style="font-weight: bold;" color="#e6e6e6"><li>Исправлены некоторые небольшие ошибки</li></font>
+                                    </ul>
+                                <br>
+<hr>
+<script type="text/javascript" src="AzGameLauncher_files/SmoothScroll.js"></script>
+
+</ul></ul></section></div></header></body></html>
