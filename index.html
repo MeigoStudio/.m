@@ -1,95 +1,181 @@
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.1.1">
-    <title>Meigo</title>
+<!DOCTYPE html>
+<html class="fp-enabled" style="overflow: hidden; height: 100%;" lang="en"><script src="blob:https://licup.ru/af93f243-959d-422a-8c52-37bba646ea8d"></script><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<title>Licup - база аккаунтов Minecraft</title>
+<link rel="stylesheet" href="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/style.css">
+<link rel="icon" href="https://licup.ru/img/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/stylesheet.css">
+<script type="text/javascript" src="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/jquery-3.js"></script><style type="text/css">.mm_download_button .byd_plus_button{width:8px;height:8px;background:url('data:image/png;base64,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') 0 0 no-repeat scroll transparent;display:inline-block}.mm_download_button .byd_arrow_button{width:8px;height:8px;background:url('data:image/png;base64,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') 0 0 no-repeat scroll transparent;display:inline-block;margin-left:3px;margin-right:0;padding-top:2px}.mm_download_button{border:1px solid transparent!important;-moz-border-radius:2px!important;-webkit-border-radius:2px!important;border-radius:2px!important;margin-left:3px!important;margin-top:6px!important;margin-right:8px!important;background-color:#e62117!important;height:24px!important;box-shadow:none!important;line-height:22px!important;outline:none!important}ytd-menu-renderer .mm_download_button.short .addto-label{font-size:0}#watch7-main .mm_download_button{margin-top:0!important}.mm_download_button span{color:#fff!important;text-shadow:none!important}.mm_download_button .icon{width:12px!important;height:12px!important;float:left!important;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAAZiS0dEAAAAAAAA+UO7fwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9sMCwwSC0DgfHMAAABrSURBVCjPlZAxDsAgDAMdxPNYmHkfMwu/80AnEIK4ai2xOPE5wkopA45qreb5pgJKUREVKCqSAsSvp0zAa2A/awVIyoA3C/gptyHnPM6G6bkNrTVTvqWUrv/uvRsA7LPpBZI4375Eci0DwANhhUXG8VDsOwAAAABJRU5ErkJggg==')!important;background-repeat:no-repeat!important;margin-right:7px;margin-top:3px}.mm_download_button .arrow{margin-left:2px!important}.mm_download_menu{min-width:110px!important;position:absolute!important;background-color:#ebebeb!important;visibility:hidden}.mm_download_menu .content{font-weight:bold!important;padding-left:8px!important;padding-right:8px!important;list-style-type:none!important}.mm_download_menu .content span{border-radius:3px!important;padding-left:6px!important;padding-right:6px!important;font:14px tahoma,sans-serif!important;text-shadow:none!important;background-image:linear-gradient(to bottom,#ebebeb 0,#ebebeb 100%);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#ebebeb),color-stop(100%,#ebebeb));background-image:-o-linear-gradient(top,#ebebeb 0,#ebebeb 100%);background-image:-moz-linear-gradient(top,#ebebeb 0,#ebebeb 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebebeb',endColorstr='#ebebeb')}.mm_download_menu .content span:hover{background-image:linear-gradient(to bottom,#c22126 0,#ed3d3e 100%);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#c22126),color-stop(100%,#ed3d3e));background-image:-o-linear-gradient(top,#c22126 0,#ed3d3e 100%);background-image:-moz-linear-gradient(top,#c22126 0,#ed3d3e 100%);filter:progid:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c22126',endColorstr='#ed3d3e');cursor:pointer!important}</style>
+<link rel="stylesheet" href="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/animate.css">
+<link rel="stylesheet" href="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/bootstrap.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/css.css" rel="stylesheet">
+<link rel="stylesheet" href="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/fullpage.css">
+<link rel="stylesheet" href="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/slick.css">
+<script type="text/javascript">
+	if(screen.width < 600){
+		window.location.replace('https://licup.ru/mobile/');
+	}
+	
+	
+</script>
+<style>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
+@media only screen and (max-width :1200px)
+{
+	.screen
+	{
+		display: none;
+	}
+}
 
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
-    <!-- Bootstrap core CSS -->
-<link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-
-
-  <!-- Кодировка веб-страницы -->
-  <meta charset="utf-8">
-  <!-- Настройка viewport -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Подключаем Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" >
-
-    <!-- Favicons -->
-<link rel="apple-touch-icon" href="/docs/4.5/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
-<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="manifest" href="/docs/4.5/assets/img/favicons/manifest.json">
-<link rel="mask-icon" href="/docs/4.5/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
-<link rel="icon" href="/docs/4.5/assets/img/favicons/favicon.ico">
-<meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
-<meta name="theme-color" content="#563d7c">
-
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
-    <meta itemprop="name" content="Meigo"/>
-  <meta itemprop="description" content="Самые лучший ПО от Meigo"/>
-  <meta itemprop="image" content="https://misha535.github.io/images/favicon.png"/>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand">Meigo :)</h3>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link active" href="https://misha535.github.io">Главная</a>
-        <a class="nav-link" href="https://github.com/misha535/misha535.github.io/releases">Релизы</a>
-        <a class="nav-link" href="https://discord.gg/en7VPumaPu">Контакты</a>
-      </nav>
-    </div>
-  </header>
-
-  <main role="main" class="inner cover">
-    <h1 class="cover-heading">MeigoOs</h1>
-    <p class="lead">Самая лучшая программа или оболочка для Windows, Mac и Linux! Уже можете скачать exe или jar прямо сейчас.</p>
-    <p class="lead">На данный момент версия 1.0.0</p>
-    <p class="lead">
-      <a href="https://github.com/misha535/misha535.github.io/releases/download/1.0.3/Krjos_1.0.3.zip" class="btn btn-lg btn-secondary">Windows</a>
-      <a href="https://github.com/misha535/misha535.github.io/releases/download/1.0.3/KRJOS.jar" class="btn btn-lg btn-secondary">Mac & Linux</a>
-    </p>
-  </main>
-
-  <footer class="mastfoot mt-auto">
-    <div class="inner">
-      <p>Meigo 2017-2021</p>
-    </div>
-  </footer>
+@media only screen and (max-height :840px)
+{
+	.macbooksize
+	{
+		max-width: 650px !important;
+	}
+}
+</style>
+</head>
+<body style="overflow: hidden; height: 100%;" class="fp-viewing-0">
+<header>
+<div class="container">
+<button class="menu-btn d-sm-flex d-lg-none">
+<span class="hamburger-el"></span>
+<span class="hamburger-el"></span>
+<span class="hamburger-el"></span>
+</button>
+<nav>
+<a href="#" class="logotype">Licup<span class="logo-red"> Лицензии</span></a>
+<ul>
+<li><a href="https://vk.com/im?sel=-191216671" target="_blank">Тех. поддержка</a></li>
+<li><a href="https://vk.com/licupru" target="_blank">Группа ВК</a></li>
+<li><a href="#advantages">Подробнее</a></li>
+<a href="https://qeo.su/download" target="_blank" class="download-btn">Скачать бесплатно</a>
+</ul>
+</nav>
 </div>
+</header>
+<div id="fullpage" style="height: 100%; position: relative; touch-action: none; transform: translate3d(0px, 0px, 0px); transition: all 700ms ease 0s;" class="fullpage-wrapper">
+<section id="home" class="section fp-section fp-table active fp-completely" data-fp-styles="null" style="height: 750px;"><div class="fp-tableCell" style="height: 750px;">
+<div class="home-wrapper">
+<div class="container">
+<h1 class="col-xl-8 wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">999+ аккаунтов в базе</h1>
+<p class="col-xl-5 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">Теперь не Вы ищите лицензии, а лицензии ищут Вас! Скачайте программу и забудьте про покупку лицензий.</p>
+<a href="https://qeo.su/download" target="_blank" class="download-btn wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;"><img src="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/win.png" alt="">Скачать Licup</a>
+<div class="home-wrapper-icons">
+<div class="advantage wow fadeInUp" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+<div class="icon-block"><i class="fas fa-hand-holding-usd"></i></div><p>48 часов бесплатной активации в подарок</p>
+</div>
+<div class="advantage wow fadeInUp" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInUp;">
+<div class="icon-block"><i class="fas fa-tachometer-alt"></i></div><p>Встроенный чекер по базам серверов</p>
+</div>
+<div class="advantage wow fadeInUp" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInUp;">
+<div class="icon-block"><i class="fas fa-shopping-cart"></i></div><p>Подходит для владельцев магазинов</p>
+</div>
+<div class="advantage wow fadeInUp" data-wow-delay="1.2s" style="visibility: visible; animation-delay: 1.2s; animation-name: fadeInUp;">
+<div class="icon-block"><i class="fas fa-download"></i></div><p>100 963 скачиваний</p>
+</div>
+</div>
+</div>
+</div>
+<div class="autoplay slick-initialized slick-slider">
+<div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 4608px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 1536px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1"><img src="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/home-bg-3.jpg" alt="Получить лицению бесплатно"></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1536px; position: relative; left: -1536px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1"><img src="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/home-bg-1.jpg" alt="Бесплатные лицензии Minecraft"></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" style="width: 1536px; position: relative; left: -3072px; top: 0px; z-index: 999; opacity: 1;" tabindex="0"><img src="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/home-bg-2.jpg" alt="Лицензия за 1 рубль майнкрафт"></div></div></div>
 
-  <!-- Подключаем jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <!-- Подключаем Bootstrap JS -->
-  <script src="js/bootstrap.min.js"></script>
+
+</div>
+</div></section>
+<section id="advantages" class="section fp-section fp-table" data-fp-styles="null" style="height: 750px;"><div class="fp-tableCell" style="height: 750px;">
+<div class="container">
+<h2 class="section-title">Наши преимущества</h2>
+<div class="advantages-wrapper">
+<div class="advantages-block col-xl-6">
+<div class="advantage">
+<span class="count">01</span>
+<div class="icon-block" style="margin-left: 7px;"><i class="fas fa-tachometer-alt"></i></div>
+<div class="advantage-info col-8 col-md-8">
+<p class="advantage-title">Полный доступ</p>
+<p>Мы добавили возможность получать лицензии с полным доступом. Лицензия будет только ваша!</p><p>
+</p></div>
+</div>
+<div class="advantage">
+<span class="count">02</span>
+<div class="icon-block"><i class="fas fa-tachometer-alt"></i></div>
+<div class="advantage-info col-8 col-md-8">
+<p class="advantage-title">Удобство</p>
+<p>У нашей программы удобный и простой для понимания интерфейс, что делает её гораздо лучше конкурентов.
+</p>
+</div>
+</div>
+<div class="advantage">
+<span class="count">03</span>
+<div class="icon-block"><i class="fas fa-tachometer-alt"></i></div>
+<div class="advantage-info col-8 col-md-8">
+<p class="advantage-title">Только рабочие</p>
+<p>У нас только рабочие лицензии, в отличие от магазинов. Робот проверяет аккаунты перед выдачей!
+</p>
+</div>
+</div>
+</div>
+<div class="col-xl-6">
+<img src="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/demo.png" alt="Демонстрация программы ликап для лицензий" class="screen">
+</div>
+</div>
+</div>
+</div></section>
+<section id="upgrade" class="section fp-section fp-table" data-fp-styles="null" style="height: 750px;"><div class="fp-tableCell" style="height: 750px;">
+<div class="container">
+<div class="download-soft col-xl-12">
+<h2 class="section-title">Прокачайтесь по полной</h2>
+<p style="color:#ccc;max-width: 40%">Скачайте Licup бесплатно и подарите лицензии всем своим друзьям или откройте свой магазин.</p>
+<a href="https://qeo.su/download" target="_blank" class="download-btn"><img src="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/win.png" alt="">Скачать Licup</a>
+<p style="font-size:12px;color:#ccc;margin-top:16px">Приложение поддерживается на ОС Windows 7 / 8 / 8.1 / 10</p>
+<img src="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/macbook.png" class="mac macbooksize" alt="Licup скачать бесплатно">
+</div>
+</div>
+</div></section></div>
+
+
+<script src="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/popper.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/bootstrap.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/slick.js"></script>
+<script type="text/javascript">
+	$('.single-item').slick({
+		  autoplaySpeed: 2500,
+		  autoplay:true,
+  arrows:true,
+  fade:true,
+	});
+</script>
+<script type="text/javascript">
+	$('.autoplay').slick({
+		  autoplaySpeed: 4500,
+		  autoplay:true,
+  arrows:false,
+  fade:true,
+	});
+</script>
+<script type="text/javascript" src="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/fullpage.js"></script>
+<script type="text/javascript" src="Licup%20-%20%D0%B1%D0%B0%D0%B7%D0%B0%20%D0%B0%D0%BA%D0%BA%D0%B0%D1%83%D0%BD%D1%82%D0%BE%D0%B2%20Minecraft_files/wow.js"></script>
+<script>
+              new WOW().init();
+</script>
+<script type="text/javascript">
+	new fullpage('#fullpage', {
+		navigation:true,
+});
+</script><div id="fp-nav" class="fp-right" style="margin-top: -33.5px;"><ul><li><a href="#" class="active"><span class="fp-sr-only">Section 1</span><span></span></a></li><li><a href="#" class=""><span class="fp-sr-only">Section 2</span><span></span></a></li><li><a href="#"><span class="fp-sr-only">Section 3</span><span></span></a></li></ul></div>
+<script type="text/javascript">
+   	$(".menu-btn").on("click", function(){
+   			$("header nav").toggleClass("navbar-active");
+   			$("header nav ul").toggleClass("list-active");
+   			$(".menu-btn .hamburger-el").toggleClass("active-menu");
+   			$("header").toggleClass("header-active");
+
+   	});
+   </script>
+
 </body></html>
